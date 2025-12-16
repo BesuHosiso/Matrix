@@ -233,7 +233,6 @@ nav {
     flex-wrap: wrap;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 1rem;
     background-color: #00ff406e;
     border: 1px solid #00ff41;
     box-shadow: 0 0 5px var(--neon-green);
@@ -684,6 +683,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
