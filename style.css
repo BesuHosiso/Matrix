@@ -24,14 +24,16 @@ body {
     color: var(--text-color);
     position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 
+/* Image style for small screens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-            /* Sections */
 
             /* Navigation */
 
@@ -172,24 +174,31 @@ nav {
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
     margin-bottom: 1rem;
+    min-height: 100svh;
 }
 
 .two-column {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .two-column {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns:  1fr;
 
 }
 }
 
 .triple-row {
     padding-left: min(3rem, 5%);
+}
+
+@media (max-width: 768px) {
+    .triple-row {
+        padding-left: 0;
+    }
 }
 
 .triple-row .main-headings h1 {
@@ -279,7 +288,7 @@ nav {
 }
 
 section {
-    min-height: 100dvh;
+    min-height: auto;
     padding-block: 1rem; 
 }
 
@@ -312,11 +321,16 @@ section h2 {
     text-align: center;
 }
 
-.service-cards {
+.service-cards, .portfolio-cards, .contacts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .service-cards, .portfolio-cards, .contacts {
+    grid-template-columns:  1fr;    
+}
 }
 
 .service-cards .card {
@@ -385,12 +399,7 @@ span {
     padding-inline: 1rem;
 }
 
-.portfolio-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
+
 
 .portfolio-cards .card {
     background-color: rgba(0, 0, 0, 0.25);
@@ -560,14 +569,7 @@ span {
     text-align: left;
 }
 
-.contacts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-    justify-content: center;
-    /* align-items: center; */
-}
+
 
 .descriptive-contact {
     display: flex;
@@ -677,5 +679,4 @@ footer {
 
 footer p {
     margin: 0.2rem 0;
-
 }
