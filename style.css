@@ -250,9 +250,9 @@ nav {
         font-size: 0.95rem;
     }
     .home-btn a {
+        padding: 1.5rem;
         width: 100%;
         text-align: center;
-        padding: 1.5rem;
     }
 }
 
@@ -696,6 +696,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
