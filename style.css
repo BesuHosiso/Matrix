@@ -243,6 +243,19 @@ nav {
     transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+    .home-btn {
+        flex-direction: column;
+        flex-items: stretch;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    .home-btn a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .home-btn a:hover {
           background-color: #00ff41;
           border: none;
@@ -683,6 +696,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
