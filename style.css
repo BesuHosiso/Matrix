@@ -230,7 +230,7 @@ nav {
 }
 
 .home-btn a {
-   
+    padding: 2rem;
     border-radius: 10px;
     font-weight: 600;
     background-color: #00ff406e;
@@ -247,7 +247,6 @@ nav {
     .home-btn {
         flex-direction: column;
         flex-items: stretch;
-        padding: 1rem;
         font-size: 0.95rem;
     }
     .home-btn a {
@@ -696,6 +695,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
