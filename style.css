@@ -228,7 +228,9 @@ nav {
 
 .home-btn a {
    
-    padding: 1.2rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
     border-radius: 10px;
     font-weight: 600;
     font-size: 1rem;
@@ -682,6 +684,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
