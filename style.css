@@ -248,10 +248,11 @@ nav {
         flex-direction: column;
         flex-items: stretch;
         font-size: 0.95rem;
+        justify-content: center;
     }
     .home-btn a {
         padding: 1.5rem;
-        width: 95%;
+        width: 90%;
         text-align: center;
     }
 }
@@ -696,6 +697,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
