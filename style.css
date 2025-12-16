@@ -224,13 +224,13 @@ nav {
 
 .home-btn {
     width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .home-btn a {
    
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
     border-radius: 10px;
     font-weight: 600;
     background-color: #00ff406e;
@@ -683,6 +683,7 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
+
 
 
 
