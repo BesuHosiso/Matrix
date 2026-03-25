@@ -342,6 +342,22 @@ section h2 {
     gap: 2rem;
 }
 
+/* Scroll Animation Styles */
+
+.hide {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.5s ease-in-out;
+    will-change: opacity, transform;
+}
+
+.hide.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 @media (max-width: 768px) {
     .service-cards, .portfolio-cards, .contacts {
     grid-template-columns:  1fr;    
@@ -697,15 +713,3 @@ footer {
 footer p {
     margin: 0.2rem 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
