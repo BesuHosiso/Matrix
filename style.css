@@ -358,6 +358,8 @@ section h2 {
 
 
 
+
+
 @media (max-width: 768px) {
     .service-cards, .portfolio-cards, .contacts {
     grid-template-columns:  1fr;    
@@ -378,19 +380,6 @@ section h2 {
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--neon-green);
-}
-
-.service-cards .card ul {
-    margin-block: 1rem;
-}
-
-.service-cards .card ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: var(--text-muted);
-    color: gray;
 }
 
 .card a {
@@ -712,4 +701,8 @@ footer {
 
 footer p {
     margin: 0.2rem 0;
+}
+
+.service-cards .card {
+    text-align: justify;
 }
