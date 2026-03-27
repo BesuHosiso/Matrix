@@ -34,6 +34,18 @@ img {
     display: block;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 
             /* Navigation */
 
@@ -82,6 +94,7 @@ nav {
 }
 
 .btn  {
+    display: inline-block;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
     font-weight: 600;
@@ -92,6 +105,7 @@ nav {
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
