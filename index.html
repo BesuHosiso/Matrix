@@ -62,12 +62,11 @@
                     <p>Matrix helps startups and businesses design, build, and launch modern digital experiences—from mobile apps to full web platforms.</p>
 
                 </div>
-                <div class="home-btn">␊
+                <div class="home-btn">
                     <a href="#service">See Services</a>
-                    <a href="#portfolio">See Portfolio</a>␊
+                    <a href="#portfolio">See Portfolio</a>
                 </div>
             </div>
-
                  <!-- Column Two -->
             <div class="tools hide">
                <img src="mob.png" alt="" loading="eager" fetchpriority="high">
@@ -88,7 +87,6 @@
                     <li>Seamless and engaging user experiences.</li>
                     <li>Scalable and maintainable codebases.</li>
                 </ul>
-                <a href="">Start Project</a>
                 <a href="#contact">Start Project</a>
             </div>
             <div class="card hide">
@@ -101,8 +99,8 @@
                 <a href="#contact">Start Project</a>
             </div>
             <div class="card hide">
-                <h3>UI/UX Development</h3>␊
-                <ul>␊
+                <h3>UI/UX Development</h3>
+                <ul>
                     <li>Human-centered design for intuitive digital products.</li>
                     <li>Wireframes and interactive prototypes for faster feedback.</li>
                     <li>Design systems that keep experiences consistent at scale.</li>
@@ -215,28 +213,37 @@
         <div class="contacts">
             <div class="descriptive-contact hide">
                 <h2>Let's build something amazing together</h2>
-                <p>Tell us about your project goals, timeline, and budget—we’ll reply with a clear plan and next steps.</p>
-                <a href="">Schedule a Call →</a>
+                <p>We're a team of experienced designers and developers who are passionate about creating beautiful, functional, and user-friendly digital products. We'd love to hear about your project and help bring your vision to life.</p>
+                <a href="mailto:hello@matrix-digital.dev?subject=Project%20Consultation%20Request">Schedule a Call →</a>
             </div>
-            <form action="" class="hide">
+            <form action="https://formsubmit.co/hello@matrix-digital.dev" method="POST" class="hide">
+                <input type="hidden" name="_subject" value="New Matrix Website Inquiry">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://matrix-digital.dev/#contact">
+                <label for="username" class="sr-only">Your Name</label>
                 <input type="text" name="User Name" id="username" placeholder="Your Name" required><br>
+                <label for="email" class="sr-only">Your Email</label>
                 <input type="email" name="Email" id="email" placeholder="Your Email" required><br>
-                <select name="Project Type" id="" required>
+                <label for="project-type" class="sr-only">Project Type</label>
+                <select name="Project Type" id="project-type" required>
                     <option value="" disabled selected>Project Type:</option>
-                    <option value="">Mobile App</option>
-                    <option value="">Website</option>
-                    <option value="">UI/UX</option>
-                    <option value="">Game</option>
+                    <option value="Mobile App">Mobile App</option>
+                    <option value="Website">Website</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Game">Game</option>
                 </select><br>
-                <select name="Budget Range" id="" required>
+                <label for="budget-range" class="sr-only">Budget Range</label>
+                <select name="Budget Range" id="budget-range" required>
                     <option value="" disabled selected>Budget Range:</option>
-                    <option value="">$30 - $80</option>
-                    <option value="">$80 - $150</option>
-                    <option value="">$150 - $200</option>
-                    <option value="">$200 - $300</option>
+                    <option value="$30 - $80">$30 - $80</option>
+                    <option value="$80 - $150">$80 - $150</option>
+                    <option value="$150 - $200">$150 - $200</option>
+                    <option value="$200 - $300">$200 - $300</option>
                 </select><br>
-                <textarea name="Project Description" id="" placeholder="Project Description" required></textarea>
-                <button>Send Message</button>
+                <label for="project-description" class="sr-only">Project Description</label>
+                <textarea name="Project Description" id="project-description" placeholder="Project Description" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
